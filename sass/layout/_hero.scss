@@ -10,7 +10,7 @@
   background-size: cover;
 }
 
-.hero-title {
+.hero__title {
   margin-bottom: 30px;
 
   font-family: var(--main-font);
@@ -20,7 +20,7 @@
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--second-color-title);
+  color: var(--second-color);
 }
 
 .modal-btn {
@@ -39,12 +39,12 @@
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.06em;
-  color: var(--second-color-title);
+  color: var(--second-color);
   cursor: pointer;
-}
 
-.modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--second-background-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--background-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }

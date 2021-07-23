@@ -3,9 +3,15 @@
   padding-bottom: 25px;
 }
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
+}
+
+.header__box {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ececec;
 }
 
 .navigation {
@@ -13,76 +19,55 @@
   align-items: center;
 }
 
-.box {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #ececec;
-}
-
-.logo {
-  margin-right: 93px;
-
-  font-family: var(--secondary-font);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #000000;
-}
-
-.logo-style {
-  color: var(--accent-color);
-}
-
 .menu {
   display: flex;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   position: relative;
   margin-right: 50px;
 }
 
-.menu-link {
+.menu__link {
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--color-title);
+  color: var(--main-color);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.menu-link:hover,
-.menu-link:focus {
+.menu__link.current {
   color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    margin-top: 29px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
 }
 
-.menu-link.current {
-  color: var(--accent-color);
-}
-
-.menu-link.current::after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 4px;
-  margin-top: 29px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-}
-
-.contact-list {
+.header__contact-list {
   display: flex;
   margin-left: auto;
 }
 
-.contat-item:not(:last-child) {
+.header__contat-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-us {
+.header__contact-link {
   display: flex;
   align-items: center;
   margin-right: 30px;
@@ -93,15 +78,15 @@
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
-.contact-us-icon {
+.header__contact-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.contact-us:hover,
-.contact-us:focus {
-  color: var(--accent-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

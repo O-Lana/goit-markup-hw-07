@@ -8,6 +8,9 @@
 
 //COMPONENTS
 @import './components/section';
+@import './components/logo';
+@import './components/social-list';
+@import './components/footer-form';
 @import './components/backdrop';
 @import './components/modal-window';
 @import './components/modal-form';
@@ -21,3 +24,5 @@
 @import './layout/team';
 @import './layout/client';
 @import './layout/footer';
+@import './layout/filter-menu';
+@import './layout/gallery';
