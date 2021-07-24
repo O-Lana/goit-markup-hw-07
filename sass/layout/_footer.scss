@@ -18,9 +18,7 @@
 
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em);
   text-transform: uppercase;
 
   color: var(--second-color);
@@ -32,9 +30,7 @@
 
   font-family: var(--main-font);
   font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, 0.03em);
   color: var(--second-color);
 }
 
@@ -44,9 +40,7 @@
 
 .address__mail {
   font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, 0.03em);
   color: rgba(255, 255, 255, 0.6);
 
   &:hover,
@@ -58,9 +52,8 @@
 
 .address__tel {
   font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, 0.03em);
+
   color: rgba(255, 255, 255, 0.6);
 
   &:hover,

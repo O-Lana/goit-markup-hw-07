@@ -5,12 +5,11 @@
 .team__title {
   margin-bottom: 50px;
 
+  text-align: center;
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include font(36px, 1.17, 0.03em);
+
   color: var(--main-color);
 }
 
@@ -38,21 +37,18 @@
 .team__player {
   margin-bottom: 10px;
 
+  text-align: center;
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.19;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include font(16px, 1.19, 0.03em);
+
   color: var(--main-color);
 }
 
 .team__position {
   margin-bottom: 16px;
 
-  font-family: var(--main-font);
-  font-size: 16px;
-  line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
+  font-family: var(--main-font);
+  @include font(16px, 1.19, 0.03em);
 }

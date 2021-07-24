@@ -23,9 +23,7 @@
 
   font-family: var(--main-font);
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--main-color);
 }
@@ -35,7 +33,5 @@
   margin-bottom: 0;
 
   font-family: var(--main-font);
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(14px, 1.71, 0.03em);
 }

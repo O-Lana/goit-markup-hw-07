@@ -31,9 +31,8 @@
 .menu__link {
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.14, 0.02em);
+
   color: var(--main-color);
 
   &:hover,
@@ -74,9 +73,8 @@
 
   font-family: var(--main-font);
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(14px, 1.14, 0.02em);
+
   color: #757575;
 
   &:hover,
